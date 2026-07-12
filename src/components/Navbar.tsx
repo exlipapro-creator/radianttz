@@ -58,8 +58,8 @@ export default function Navbar() {
       data-testid="navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg"
-          : "bg-white/90 backdrop-blur-sm"
+          ? "bg-[#14213c]/95 backdrop-blur-md shadow-lg"
+          : "bg-[#14213c]/90 backdrop-blur-sm"
       }`}
       style={{ height: "64px" }}
     >
@@ -77,13 +77,13 @@ export default function Navbar() {
               alt="Radiant Company Limited logo"
               fill
               sizes="56px"
-              className="object-contain"
+              className="object-contain invert brightness-0"
               priority
             />
           </div>
-          <span className="font-display font-bold text-[#14213c] text-sm sm:text-base leading-tight hidden xs:block">
+          <span className="font-display font-bold text-white text-sm sm:text-base leading-tight hidden xs:block">
             RADIANT COMPANY<br />
-            <span className="text-amber-500">LIMITED</span>
+            <span className="text-amber-400">LIMITED</span>
           </span>
         </button>
 
@@ -97,13 +97,13 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeSection === link.id
-                  ? "text-amber-600"
-                  : "text-slate-600 hover:text-[#14213c] hover:bg-slate-100"
+                  ? "text-amber-400"
+                  : "text-slate-300 hover:text-white hover:bg-white/5"
               }`}
             >
               {link.label}
               {activeSection === link.id && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-500 rounded-full" />
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-400 rounded-full" />
               )}
             </button>
           ))}
@@ -123,7 +123,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           data-testid="nav-hamburger"
-          className="md:hidden flex flex-col gap-1.5 p-2 text-[#14213c]"
+          className="md:hidden flex flex-col gap-1.5 p-2 text-white"
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -139,7 +139,7 @@ export default function Navbar() {
         <div
           data-testid="mobile-menu"
           ref={menuRef}
-          className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-200 shadow-xl"
+          className="md:hidden absolute top-full left-0 right-0 bg-[#1b2a4a] border-t border-white/10 shadow-xl"
         >
           <nav className="flex flex-col py-3" aria-label="Mobile navigation">
             {NAV_LINKS.map((link) => (
@@ -150,8 +150,8 @@ export default function Navbar() {
                 onClick={() => scrollTo(link.id)}
                 className={`px-6 py-3 text-left text-sm font-medium transition-colors ${
                   activeSection === link.id
-                    ? "text-amber-600 bg-slate-50"
-                    : "text-slate-600 hover:text-[#14213c] hover:bg-slate-50"
+                    ? "text-amber-400 bg-white/5"
+                    : "text-slate-300 hover:text-white hover:bg-white/5"
                 }`}
               >
                 {link.label}
