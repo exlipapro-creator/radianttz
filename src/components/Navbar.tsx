@@ -70,14 +70,14 @@ export default function Navbar() {
           className="flex items-center gap-3 flex-shrink-0"
           aria-label="Go to top"
         >
-          <div className="w-14 h-14 relative flex-shrink-0">
+          <div className="w-14 h-14 relative flex-shrink-0 rounded-full bg-white shadow-sm p-1.5">
             <Image
               data-testid="navbar-logo"
               src={COMPANY.logoAsset}
               alt="Radiant Company Limited logo"
               fill
               sizes="56px"
-              className="object-contain invert brightness-0"
+              className="object-contain p-1.5"
               priority
             />
           </div>
