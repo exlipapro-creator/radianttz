@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: radiant-company-portal
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: DROIDBOT_PUBLIC_URL
+        sync: false
+      - key: DROIDBOT_SMTP_HOST
+        sync: false
+      - key: DROIDBOT_SMTP_PORT
+        sync: false
+      - key: DROIDBOT_SMTP_USER
+        sync: false
+      - key: DROIDBOT_SMTP_PASS
+        sync: false
+      - key: INQUIRY_TO_EMAIL
+        sync: false
+      - key: INQUIRY_FROM_EMAIL
+        sync: false
