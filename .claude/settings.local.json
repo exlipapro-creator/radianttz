@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(find .claude -type f)",
+      "Bash(ls .claude)",
+      "Bash(npm install *)",
+      "Bash(powershell -Command 'Get-ChildItem -Path '\\\\''C:\\\\Users\\\\PC\\\\AppData\\\\Local\\\\Temp'\\\\'' -Recurse -Include *.png,*.jpg,*.jpeg -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt \\(Get-Date\\).AddHours\\(-2\\) } | Select-Object FullName, LastWriteTime')",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(where ngrok *)",
+      "Bash(where cloudflared *)",
+      "Bash(where lt *)",
+      "Bash(npm ls *)",
+      "Bash(npx --yes cloudflared tunnel --url http://localhost:3000)",
+      "Bash(tee \"C:\\\\Users\\\\PC\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-PC-Documents-radiant-company-portal-app\\\\1863b835-c9c0-4bca-915c-cd453235101c\\\\scratchpad\\\\cloudflared.log\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://patrick-opt-modifications-iowa.trycloudflare.com/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://patrick-opt-modifications-iowa.trycloudflare.com/)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

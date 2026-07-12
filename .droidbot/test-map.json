@@ -1,0 +1,378 @@
+[
+  {
+    "id": "M1-AC1",
+    "selector": "navbar, navbar-logo",
+    "component": "components/Navbar.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC2",
+    "selector": "hero, hero-title, hero-tagline, hero-cta",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC3",
+    "selector": "nav-link-home, nav-link-about, nav-link-services, nav-link-why, nav-link-partners, nav-link-contact, contact-section",
+    "component": "components/Navbar.tsx, components/ContactSection.tsx",
+    "handler": "scrollTo (Navbar button onClick, calls document.getElementById(id).scrollIntoView({behavior:'smooth'}))",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC4",
+    "selector": "hero-cta, contact-section",
+    "component": "components/HeroSection.tsx, components/ContactSection.tsx",
+    "handler": "scrollTo (HeroSection hero-cta onClick -> scrollTo('contact'))",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC5",
+    "selector": "nav-hamburger, mobile-menu, nav-link-about",
+    "component": "components/Navbar.tsx",
+    "handler": "setMenuOpen (nav-hamburger onClick toggles menuOpen), scrollTo (nav-link-about onClick closes menu + scrolls)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC6",
+    "selector": "n/a (head meta tags, not data-testid)",
+    "component": "app/layout.tsx, lib/content.ts",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M1-AC7",
+    "selector": "n/a",
+    "component": "app/ (Next.js App Router default not-found handling, no custom not-found.tsx present)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC1",
+    "selector": "about-section, about-body, stat-services, stat-coverage, stat-zma",
+    "component": "components/AboutSection.tsx, lib/content.ts (ABOUT.body)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC2",
+    "selector": "service-card-freight, service-card-materials, service-card-zma, service-card-chandling, service-card-cargo, service-card-<slug>-title",
+    "component": "components/ServicesSection.tsx, lib/content.ts (SERVICES)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC3",
+    "selector": "service-inquire-freight, service-inquire-materials, service-inquire-zma, service-inquire-chandling, service-inquire-cargo, contact-section, select-service",
+    "component": "components/ServicesSection.tsx, components/ContactSection.tsx",
+    "handler": "scrollToContact (service-inquire-* onClick -> scrolls to #contact, then sets [data-testid=select-service] value to the slug and dispatches a change event after 600ms)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC4",
+    "selector": "service-card-materials (Details button, no testid), service-modal, service-detail-materials, materials-products, service-modal-close",
+    "component": "components/ServicesSection.tsx, lib/content.ts (SERVICES materials.products)",
+    "handler": "setOpenSlug (Details button onClick opens modal for slug), closeModal (service-modal-close onClick / Escape key / backdrop click)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC5",
+    "selector": "why-section, why-item-1, why-item-2, why-item-3, why-item-4, why-item-5, why-item-6, why-item-7",
+    "component": "components/WhyUsSection.tsx, lib/content.ts (WHY_US)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC6",
+    "selector": "service-card-freight, service-card-materials, service-card-zma, service-card-chandling, service-card-cargo, why-item-1..7, stat-services, stat-coverage, stat-zma",
+    "component": "components/ServicesSection.tsx, components/WhyUsSection.tsx, components/AboutSection.tsx, app/layout.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M2-AC7",
+    "selector": "services-section, service-card-materials, service-modal",
+    "component": "components/ServicesSection.tsx",
+    "handler": "n/a (Tailwind responsive grid: grid sm:grid-cols-2 lg:grid-cols-3, single column below sm breakpoint)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC1",
+    "selector": "values-section, vision-statement, mission-statement, core-values, value-1, value-2, value-3, value-4, value-5, value-6, value-7",
+    "component": "components/ValuesSection.tsx, lib/content.ts (VISION, MISSION, CORE_VALUES)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC2",
+    "selector": "team-section (intentionally absent)",
+    "component": "n/a (no TeamSection component exists; removed per C5-AC1)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC3",
+    "selector": "partners-section, partner-propav, partner-tcb, partner-alpha, partner-til",
+    "component": "components/PartnersSection.tsx, lib/content.ts (PARTNERS)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC4",
+    "selector": "footer, footer-name, footer-tagline, footer-copyright, footer-link-home, footer-link-about, footer-link-services, footer-link-why, footer-link-partners, footer-link-contact, footer-phone, footer-email",
+    "component": "components/Footer.tsx, lib/content.ts (COMPANY)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC5",
+    "selector": "nav-link-services (data-active attribute)",
+    "component": "components/Navbar.tsx",
+    "handler": "handleScroll (scroll listener computes activeSection by comparing each NAV_LINKS section's getBoundingClientRect().top to 80, sets data-active via setActiveSection)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC6",
+    "selector": "back-to-top (data-visible attribute), hero-title",
+    "component": "components/BackToTop.tsx, components/HeroSection.tsx",
+    "handler": "handleScroll (toggles visible when #home bottom < 0), handleClick (scrolls #home into view)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC7",
+    "selector": "values-section, partners-section, footer, hero, about-section, services-section, why-section",
+    "component": "components/ValuesSection.tsx, components/PartnersSection.tsx, components/Footer.tsx, components/HeroSection.tsx, components/AboutSection.tsx, components/ServicesSection.tsx, components/WhyUsSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M3-AC8",
+    "selector": "partners-section, core-values, team-section (absent)",
+    "component": "components/PartnersSection.tsx, components/ValuesSection.tsx",
+    "handler": "n/a (Tailwind responsive grid layout)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC1",
+    "selector": "contact-section, contact-phone-1, contact-phone-2, contact-email, contact-website, inquiry-form, input-fullName, input-company, input-email, input-phone, select-service, textarea-message, input-website, inquiry-submit",
+    "component": "components/ContactSection.tsx, lib/content.ts (COMPANY, SERVICES)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC2",
+    "selector": "inquiry-form, inquiry-submit, inquiry-success",
+    "component": "components/ContactSection.tsx",
+    "handler": "handleSubmit (form onSubmit: validates, POSTs JSON to /api/inquiry, on ok:true sets status='success', resets form)",
+    "api": "POST /api/inquiry",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC3",
+    "selector": "inquiry-form, inquiry-submit, error-fullName, error-email, error-phone, error-message, inquiry-success",
+    "component": "components/ContactSection.tsx",
+    "handler": "validate + handleSubmit (client-side validate() populates errors state; empty required fields block fetch call and render error-* paragraphs; inquiry-success not rendered)",
+    "api": "n/a (client-side validation short-circuits before network call)",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC4",
+    "selector": "input-email, error-email, inquiry-success",
+    "component": "components/ContactSection.tsx",
+    "handler": "validateEmail + validate (regex /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/ test fails -> error-email = 'Please enter a valid email address.')",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC5",
+    "selector": "n/a (API-level, no UI selectors)",
+    "component": "app/api/inquiry/route.ts",
+    "handler": "POST (validateInquiry field checks -> 400 ok:false with errors object), GET (returns 405 ok:false), POST malformed JSON (req.json() throw caught -> 400 with default field errors)",
+    "api": "POST /api/inquiry, GET /api/inquiry",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC6",
+    "selector": "input-website",
+    "component": "components/ContactSection.tsx (honeypot field), app/api/inquiry/route.ts",
+    "handler": "POST (honeypot check: if body.website is a non-empty string, silently returns {ok:true} with HTTP 200 without sending email)",
+    "api": "POST /api/inquiry",
+    "db": "n/a"
+  },
+  {
+    "id": "M4-AC7",
+    "selector": "inquiry-form, inquiry-success",
+    "component": "components/ContactSection.tsx",
+    "handler": "handleSubmit (successful submission triggers status='success' banner; verified to persist rendering across a page reload)",
+    "api": "POST /api/inquiry",
+    "db": "n/a"
+  },
+  {
+    "id": "C1-AC1",
+    "selector": "partner-propav-logo, partner-tcb-logo, partner-alpha-logo, partner-til-logo",
+    "component": "components/PartnersSection.tsx, lib/content.ts (PARTNERS[].logo)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C1-AC2",
+    "selector": "partner-propav-logo, partner-tcb-logo, partner-alpha-logo, partner-til-logo",
+    "component": "components/PartnersSection.tsx, lib/content.ts (PARTNERS: propav=/assets/IMG_20260625_133054.jpg, tcb=/assets/IMG_20260625_133133.jpg, alpha=/assets/IMG_20260625_133206.jpg, til=/assets/IMG_20260625_133253.jpg)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C1-AC3",
+    "selector": "partner-propav-logo, partner-tcb-logo, partner-alpha-logo, partner-til-logo, partner-tcb, partner-alpha",
+    "component": "components/PartnersSection.tsx, lib/content.ts (PARTNERS[].name, PARTNERS[].tagline)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C1-AC4",
+    "selector": "partners-section, partner-propav-logo, partner-tcb-logo, partner-alpha-logo, partner-til-logo",
+    "component": "components/PartnersSection.tsx",
+    "handler": "n/a (static assets served from app/public/assets/, Tailwind responsive grid for 375px layout)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C3-AC1",
+    "selector": "hero-bg, hero-overlay, hero-title, hero-tagline, hero-subhead",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C3-AC2",
+    "selector": "hero-badge",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C3-AC3",
+    "selector": "hero-cta, hero-cta-secondary",
+    "component": "components/HeroSection.tsx",
+    "handler": "scrollTo (hero-cta onClick -> scrollTo('contact'); hero-cta-secondary onClick -> scrollTo('services'))",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C3-AC4",
+    "selector": "chat-widget, chat-panel, scroll-indicator",
+    "component": "components/ChatWidget.tsx, components/HeroSection.tsx",
+    "handler": "setOpen (chat-widget onClick toggles open, rendering chat-panel)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C3-AC5",
+    "selector": "hero, hero-cta, hero-cta-secondary, chat-widget",
+    "component": "components/HeroSection.tsx, components/ChatWidget.tsx",
+    "handler": "n/a (static asset app/public/assets/port-terminal.svg served by Next.js; 375px Tailwind responsive layout)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C4-AC1",
+    "selector": "hero-bg, hero-overlay, hero-title, hero-tagline, hero-subhead",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C4-AC2",
+    "selector": "hero, hero-cta, hero-cta-secondary",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a (inline-flex buttons sized to content: 'inline-flex items-center justify-center px-8 py-3.5' classes hug label width)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C4-AC3",
+    "selector": "hero-cta, hero-cta-secondary",
+    "component": "components/HeroSection.tsx",
+    "handler": "scrollTo (hero-cta white pill rounded-full onClick -> contact; hero-cta-secondary amber uppercase rounded-md onClick -> services)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C4-AC4",
+    "selector": "hero-title, hero-cta, hero-cta-secondary",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a (static asset app/public/assets/Screenshot_2026-06-25-11-35-32-946_com.mi.globalbrowser.jpg; 375px Tailwind responsive layout)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C5-AC1",
+    "selector": "team-section (absent), nav-link-team (absent), footer-link-team (absent), values-section, partners-section",
+    "component": "app/page.tsx, components/Navbar.tsx, components/Footer.tsx, components/ValuesSection.tsx, components/PartnersSection.tsx",
+    "handler": "n/a (Navbar NAV_LINKS and Footer NAV_LINKS arrays no longer include a 'team' entry; page.tsx renders ValuesSection immediately before PartnersSection with no TeamSection between them)",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C5-AC2",
+    "selector": "navbar-logo",
+    "component": "components/Navbar.tsx, lib/content.ts (COMPANY.logoAsset), app/layout.tsx (metadata.icons, metadata.openGraph.images)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C5-AC3",
+    "selector": "hero-bg",
+    "component": "components/HeroSection.tsx",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C5-AC4",
+    "selector": "contact-website",
+    "component": "components/ContactSection.tsx, components/Footer.tsx (website link has no data-testid), lib/content.ts (COMPANY.website)",
+    "handler": "n/a",
+    "api": "n/a",
+    "db": "n/a"
+  },
+  {
+    "id": "C5-AC5",
+    "selector": "navbar, values-section, partners-section, footer",
+    "component": "components/Navbar.tsx, components/ValuesSection.tsx, components/PartnersSection.tsx, components/Footer.tsx",
+    "handler": "n/a (static asset app/public/assets/SAVE_20260711_203949.jpg; 375px Tailwind responsive layout)",
+    "api": "n/a",
+    "db": "n/a"
+  }
+]

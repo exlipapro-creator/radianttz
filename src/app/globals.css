@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+
+  /* Navy brand scale */
+  --color-navy-50: #f1f4f9;
+  --color-navy-100: #dbe2ee;
+  --color-navy-200: #b8c5dd;
+  --color-navy-300: #8fa3c7;
+  --color-navy-400: #617eaf;
+  --color-navy-500: #426196;
+  --color-navy-600: #354e7e;
+  --color-navy-700: #233a63;
+  --color-navy-800: #1b2a4a;
+  --color-navy-900: #14213c;
+  --color-navy-950: #0e1830;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: var(--font-sans);
+}
+
+/* Offset scroll for fixed navbar */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Gold accent divider */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: #f59e0b;
+  margin: 0 auto;
+}
+
+/* Section band alternating */
+.section-light {
+  background-color: #f8fafc;
+}
+
+.section-off {
+  background-color: #f1f4f9;
+}
+
+/* Smooth transition helpers */
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f59e0b;
+  border-radius: 1px;
+}
+
+/* Geometric hero pattern */
+.hero-pattern {
+  background-color: #14213c;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.06) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(35, 58, 99, 0.4) 0%, transparent 60%);
+}
+
+/* Geometric SVG pattern overlay */
+.geo-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Font display utility */
+.font-display {
+  font-family: var(--font-display);
+}
