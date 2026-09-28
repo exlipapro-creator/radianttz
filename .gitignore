@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local agent/tool artifacts
+.freebuff/
+dev.log
+
+# credentials — never commit
+CREDENTIALS.json
