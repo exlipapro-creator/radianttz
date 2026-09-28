@@ -1,0 +1,18 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- CRDB Bank Logo -->
+  <!-- Green background for BANK text -->
+  <rect x="165" y="80" width="270" height="70" fill="#1FAD5E" rx="5"/>
+  
+  <!-- CRDB text in green -->
+  <text x="300" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1FAD5E" text-anchor="middle">CRDB</text>
+  
+  <!-- BANK text in white on green background -->
+  <text x="300" y="135" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">BANK</text>
+  
+  <!-- Tagline -->
+  <text x="300" y="175" font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#333" text-anchor="middle">The bank that listens</text>
+  
+  <!-- Decorative lines -->
+  <line x1="50" y1="100" x2="150" y2="100" stroke="#1FAD5E" stroke-width="8" stroke-linecap="round"/>
+  <line x1="450" y1="100" x2="550" y2="100" stroke="#1FAD5E" stroke-width="8" stroke-linecap="round"/>
+</svg>
