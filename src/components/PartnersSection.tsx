@@ -38,7 +38,7 @@ export default function PartnersSection() {
                   alt={`${partner.name} logo`}
                   width={200}
                   height={80}
-                  className="max-h-full w-auto object-contain"
+                  className="max-h-full w-auto object-contain max-w-[180px]"
                 />
               </div>
 

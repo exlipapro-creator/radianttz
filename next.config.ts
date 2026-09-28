@@ -24,6 +24,15 @@ const SECURITY_HEADERS = [
 ];
 
 const nextConfig: NextConfig = {
+  // Allow static SVG assets (e.g. partner logos) through the Next.js image optimizer.
+  // Safe here: SVGs are only served from /public as static files, never user-uploaded.
+  images: {
+    dangerouslyAllowSVG: true,
+    // Next's default is "attachment", which stops SVGs from rendering in <img>.
+    // Safe to inline here: SVGs are static files from /public (no user uploads) and
+    // the optimizer already serves them with script-src 'none' + sandbox CSP.
+    contentDispositionType: "inline",
+  },
   async headers() {
     return [
       {

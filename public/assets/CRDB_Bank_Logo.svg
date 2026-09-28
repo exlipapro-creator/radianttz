@@ -1,18 +1,49 @@
-<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- CRDB Bank Logo -->
-  <!-- Green background for BANK text -->
-  <rect x="165" y="80" width="270" height="70" fill="#1FAD5E" rx="5"/>
-  
-  <!-- CRDB text in green -->
-  <text x="300" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1FAD5E" text-anchor="middle">CRDB</text>
-  
-  <!-- BANK text in white on green background -->
-  <text x="300" y="135" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">BANK</text>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="crdb-logo-title crdb-logo-desc">
+  <title id="crdb-logo-title">CRDB Bank</title>
+  <desc id="crdb-logo-desc">CRDB Bank logo — The bank that listens</desc>
+
+  <!-- CRDB lettermark -->
+  <text
+    x="320" y="106"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="92"
+    font-weight="bold"
+    font-style="italic"
+    letter-spacing="-4"
+    fill="#1FAD5E"
+    text-anchor="middle"
+  >CRDB</text>
+
+  <!-- BANK plate -->
+  <rect x="190" y="120" width="260" height="68" rx="4" fill="#1FAD5E"/>
+  <text
+    x="320" y="172"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="46"
+    font-weight="bold"
+    letter-spacing="6"
+    fill="#FFFFFF"
+    text-anchor="middle"
+  >BANK</text>
+
+  <!-- Side stripes (three bars each side, aligned with the BANK plate) -->
+  <g fill="#1FAD5E">
+    <rect x="0"   y="124" width="166" height="12"/>
+    <rect x="0"   y="148" width="166" height="12"/>
+    <rect x="0"   y="172" width="166" height="12"/>
+    <rect x="474" y="124" width="166" height="12"/>
+    <rect x="474" y="148" width="166" height="12"/>
+    <rect x="474" y="172" width="166" height="12"/>
+  </g>
+
   <!-- Tagline -->
-  <text x="300" y="175" font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#333" text-anchor="middle">The bank that listens</text>
-  
-  <!-- Decorative lines -->
-  <line x1="50" y1="100" x2="150" y2="100" stroke="#1FAD5E" stroke-width="8" stroke-linecap="round"/>
-  <line x1="450" y1="100" x2="550" y2="100" stroke="#1FAD5E" stroke-width="8" stroke-linecap="round"/>
+  <text
+    x="320" y="248"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="34"
+    font-weight="bold"
+    font-style="italic"
+    fill="#1A1A1A"
+    text-anchor="middle"
+  >The bank that listens</text>
 </svg>

@@ -185,10 +185,10 @@ export const PARTNERS = [
     logo: "/assets/IMG_20260625_133054.jpg",
   },
   {
-    id: "tcb",
-    name: "Tanzania Commercial Bank",
-    tagline: "Growing stronger together",
-    logo: "/assets/IMG_20260625_133133.jpg",
+    id: "crdb",
+    name: "CRDB Bank",
+    tagline: "The bank that listens",
+    logo: "/assets/CRDB_Bank_Logo.svg",
   },
   {
     id: "alpha",
